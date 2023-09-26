@@ -1,3 +1,5 @@
+package dto;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,6 +13,8 @@ public class Customer {
     private String name;
     private String address;
     private double salary;
+
+    public Customer(){}
 
     public Customer(String id, String name, String address, double salary) {
         this.id = id;
@@ -49,7 +53,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "dto.Customer{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
